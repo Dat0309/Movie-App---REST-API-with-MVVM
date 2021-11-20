@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
         Call<MovieSearchResponse> responseCall = movieApi.searchMovie(
                         Credentials.API_KEY,
-                        "Jack Reacher",
+                        "Action",
                         1);
 
         responseCall.enqueue(new Callback<MovieSearchResponse>() {

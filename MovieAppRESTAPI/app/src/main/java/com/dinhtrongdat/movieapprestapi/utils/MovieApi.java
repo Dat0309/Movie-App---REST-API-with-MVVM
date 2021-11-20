@@ -19,8 +19,8 @@ public interface MovieApi {
      * @param page số trang
      * @return
      */
-    @GET
-    Call<MovieSearchResponse> searchMovie(
+    @GET("/3/search/movie")
+    public Call<MovieSearchResponse> searchMovie(
             @Query("api_key") String key,
             @Query("query") String query,
             @Query("page") int page
